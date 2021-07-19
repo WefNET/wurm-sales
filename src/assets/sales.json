@@ -1,0 +1,313 @@
+{
+    "armor": {
+        "categories": [{
+                "type": "Chain",
+                "slots": [{
+                        "type": "Chain coif",
+                        "items": [{
+                                "ql": "64",
+                                "material": "bronze",
+                                "price": 2000
+                            },
+                            {
+                                "ql": "77",
+                                "material": "gold",
+                                "price": 3500
+                            },
+                            {
+                                "ql": "72",
+                                "material": "iron",
+                                "price": 2500
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Chain chest",
+                        "items": [{
+                                "ql": "71",
+                                "material": "iron",
+                                "price": 2500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 81
+                                }]
+                            },
+                            {
+                                "ql": "72",
+                                "material": "gold",
+                                "price": 3500
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Chain sleeve",
+                        "items": [{
+                            "ql": "77",
+                            "material": "gold",
+                            "price": 2500
+                        }, {
+                            "ql": "76",
+                            "material": "gold",
+                            "price": 2500
+                        }, {
+                            "ql": "72",
+                            "material": "iron",
+                            "price": 2500
+                        }, {
+                            "ql": "71",
+                            "material": "iron",
+                            "price": 2500
+                        }]
+                    },
+                    {
+                        "type": "Chain gauntlet",
+                        "items": [{
+                            "ql": "74",
+                            "material": "iron",
+                            "price": 2500
+                        }, {
+                            "ql": "74",
+                            "material": "iron",
+                            "price": 2500
+                        }, {
+                            "ql": "72",
+                            "material": "iron",
+                            "price": 2500
+                        }, {
+                            "ql": "72",
+                            "material": "iron",
+                            "price": 2500
+                        }, {
+                            "ql": "42",
+                            "material": "iron",
+                            "price": 2500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 96
+                            }]
+                        }]
+                    },
+                    {
+                        "type": "Chain pants",
+                        "items": []
+                    },
+                    {
+                        "type": "Chain boot",
+                        "items": [{
+                            "ql": "77",
+                            "material": "gold",
+                            "price": 3500
+                        }, {
+                            "ql": "78",
+                            "material": "gold",
+                            "price": 3500
+                        }, {
+                            "ql": "70",
+                            "material": "iron",
+                            "price": 2500
+                        }]
+                    },
+                    {
+                        "type": "Chain barding",
+                        "items": [{
+                            "ql": "76",
+                            "material": "iron",
+                            "price": 5500
+                        }]
+                    }
+                ]
+            },
+            {
+                "type": "Plate",
+                "slots": [{
+                        "type": "Basinet helm",
+                        "items": []
+                    },
+                    {
+                        "type": "Great helm",
+                        "items": [{
+                            "ql": "68",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 67
+                            }],
+                            "sold": false
+                        }]
+                    },
+                    {
+                        "type": "Open helm",
+                        "items": []
+                    },
+                    {
+                        "type": "Breast plate",
+                        "items": [{
+                                "ql": "66",
+                                "material": "iron",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 87
+                                }]
+                            },
+                            {
+                                "ql": "68",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 75
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Plate vambrance",
+                        "items": [{
+                                "ql": "72",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 71
+                                }]
+                            },
+                            {
+                                "ql": "71",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 82
+                                }]
+                            },
+                            {
+                                "ql": "68",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 90
+                                }]
+                            },
+                            {
+                                "ql": "65",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 63
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Plate gauntlet",
+                        "items": [{
+                                "ql": "76",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 82
+                                }]
+                            },
+                            {
+                                "ql": "75",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 86
+                                }]
+                            },
+                            {
+                                "ql": "66",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 90
+                                }]
+                            },
+                            {
+                                "ql": "65",
+                                "material": "steel",
+                                "price": 5500,
+                                "enchants": [{
+                                    "spell": "AoSP",
+                                    "strength": 62
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Plate leggings",
+                        "items": [{
+                            "ql": "66",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 84
+                            }]
+                        }]
+                    },
+                    {
+                        "type": "Plate sabatons",
+                        "items": [{
+                            "ql": "76",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 80
+                            }]
+                        }, {
+                            "ql": "75",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 77
+                            }]
+                        }, {
+                            "ql": "70",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 73
+                            }]
+                        }, {
+                            "ql": "69",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 87
+                            }]
+                        }, {
+                            "ql": "66",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 95
+                            }]
+                        }, {
+                            "ql": "64",
+                            "material": "steel",
+                            "price": 5500,
+                            "enchants": [{
+                                "spell": "AoSP",
+                                "strength": 90
+                            }]
+                        }]
+                    }
+                ]
+            }
+        ]
+    }
+}

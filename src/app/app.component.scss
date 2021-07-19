@@ -1,0 +1,18 @@
+.content {
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+    color: black;
+}
+
+.price {
+    text-decoration: wavy;
+    float: right;
+}
+
+.sold {
+    text-decoration: line-through;
+    background-color: red;
+    span {
+        text-decoration: line-through;
+    }
+}
