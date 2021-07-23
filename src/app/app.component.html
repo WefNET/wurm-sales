@@ -5,52 +5,29 @@
       </span>
 </nav>
 
-<!-- <mat-toolbar>
-    <span>Jack's Wurm Online Sales</span>
-    <span class="menu-spacer"></span>
-    <span>Jackjones, Xanadu</span>
-</mat-toolbar> -->
-
 <div class="content">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-xl-4" *ngFor="let category of sales.armor.categories">
             <h3>
-                Chain Armour Items
+                {{category.type}}
             </h3>
 
-            <div *ngFor="let item of chainItems">
-                <div *ngFor="let slot of item.slots">
-                    <ul class="list-group" *ngFor="let a of slot.items">
-                        <li class="list-group-item" [ngClass]="{'sold' : a.sold === true}">
-                            <span>{{slot.type}} ({{a.material}}), {{a.ql}}ql</span>
-                            <span *ngFor="let cast of a.enchants">
-                            {{cast.spell}}{{cast.strength}}
-                        </span>
-                            <span class="price">{{a.price | price}}</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div *ngFor="let slot of category.slots">
+                <ul class="list-group" *ngFor="let a of slot.items">
+                    <li class="list-group-item item" [ngClass]="{'sold' : a.sold === true}">
+                        <span [ngClass]="slot.class" class="slot-icon"></span>
+                        <div class="hover-panel">
+                            {{slot.type}} <span class="ql">QL: {{a.ql}}</span> <br /> {{a.material}}, common
+                            <br *ngIf="a.enchants" />
+                            <br *ngIf="a.enchants" />
 
-        </div>
-
-        <div class="col-md-4">
-            <h3>
-                Plate Armour Items
-            </h3>
-
-            <div *ngFor="let item of plateItems">
-                <div *ngFor="let slot of item.slots">
-                    <ul class="list-group" *ngFor="let a of slot.items">
-                        <li class="list-group-item" [ngClass]="{'sold' : a.sold === true}">
-                            <span>{{slot.type}} ({{a.material}}), {{a.ql}}ql</span>
-                            <span *ngFor="let cast of a.enchants">
-                            {{cast.spell}}{{cast.strength}}
-                        </span>
-                            <span class="price">{{a.price | price}}</span>
-                        </li>
-                    </ul>
-                </div>
+                            <span *ngFor="let cast of a.enchants">{{cast.spell}} {{cast.strength}} </span>
+                        </div>
+                        <span>{{slot.type}}</span><span> ({{a.material}}),</span><span> {{a.ql}}ql</span>
+                        <span *ngFor="let cast of a.enchants"> {{cast.spell}}{{cast.strength}} </span>
+                        <span class="price"> {{a.price | price}}</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

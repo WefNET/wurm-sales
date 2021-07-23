@@ -1,9 +1,10 @@
 {
     "armor": {
         "categories": [{
-                "type": "Chain",
+                "type": "Chain Armor",
                 "slots": [{
                         "type": "Chain coif",
+                        "class": "chain-coif",
                         "items": [{
                                 "ql": "64",
                                 "material": "bronze",
@@ -23,6 +24,7 @@
                     },
                     {
                         "type": "Chain chest",
+                        "class": "chain-chest",
                         "items": [{
                                 "ql": "71",
                                 "material": "iron",
@@ -41,6 +43,7 @@
                     },
                     {
                         "type": "Chain sleeve",
+                        "class": "chain-sleeve",
                         "items": [{
                             "ql": "77",
                             "material": "gold",
@@ -61,6 +64,7 @@
                     },
                     {
                         "type": "Chain gauntlet",
+                        "class": "chain-gauntlet",
                         "items": [{
                             "ql": "74",
                             "material": "iron",
@@ -89,10 +93,12 @@
                     },
                     {
                         "type": "Chain pants",
+                        "class": "chain-pants",
                         "items": []
                     },
                     {
                         "type": "Chain boot",
+                        "class": "chain-boot",
                         "items": [{
                             "ql": "77",
                             "material": "gold",
@@ -109,22 +115,24 @@
                     },
                     {
                         "type": "Chain barding",
+                        "class": "chain-barding",
                         "items": [{
                             "ql": "76",
                             "material": "iron",
-                            "price": 5500
+                            "price": 7000
                         }]
                     }
                 ]
             },
             {
-                "type": "Plate",
+                "type": "Plate Armour",
                 "slots": [{
                         "type": "Basinet helm",
                         "items": []
                     },
                     {
                         "type": "Great helm",
+                        "class": "great-helm",
                         "items": [{
                             "ql": "68",
                             "material": "steel",
@@ -142,6 +150,7 @@
                     },
                     {
                         "type": "Breast plate",
+                        "class": "breast-plate",
                         "items": [{
                                 "ql": "66",
                                 "material": "iron",
@@ -164,6 +173,7 @@
                     },
                     {
                         "type": "Plate vambrance",
+                        "class": "plate-vambrance",
                         "items": [{
                                 "ql": "72",
                                 "material": "steel",
@@ -204,6 +214,7 @@
                     },
                     {
                         "type": "Plate gauntlet",
+                        "class": "plate-gauntlet",
                         "items": [{
                                 "ql": "76",
                                 "material": "steel",
@@ -244,6 +255,7 @@
                     },
                     {
                         "type": "Plate leggings",
+                        "class": "plate-leggings",
                         "items": [{
                             "ql": "66",
                             "material": "steel",
@@ -256,6 +268,7 @@
                     },
                     {
                         "type": "Plate sabatons",
+                        "class": "plate-sabatons",
                         "items": [{
                             "ql": "76",
                             "material": "steel",
@@ -307,6 +320,26 @@
                         }]
                     }
                 ]
+            },
+            {
+                "type": "Tools",
+                "slots": [{
+                    "type": "Awl",
+                    "items": [{
+                        "ql": "76",
+                        "material": "iron",
+                        "price": 5500,
+                        "enchants": [{
+                                "spell": "CoC",
+                                "strength": 67
+                            },
+                            {
+                                "spell": "WoA",
+                                "strength": 64
+                            }
+                        ]
+                    }]
+                }]
             }
         ]
     }

@@ -4,6 +4,27 @@
     color: black;
 }
 
+.hover-panel {
+    border: 2px solid burlywood;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 4px;
+    position: absolute;
+    top: 55px;
+    z-index: 100;
+    display: none;
+    .ql {
+        float: right;
+    }
+}
+
+.slot-icon:hover+.hover-panel {
+    display: block;
+}
+
 .price {
     text-decoration: wavy;
     float: right;
@@ -15,4 +36,436 @@
     span {
         text-decoration: line-through;
     }
+}
+
+.slot-icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.breast-plate {
+    background: url("./../assets/armor.png") no-repeat -0px -0px;
+}
+
+.plate-leggings {
+    background: url("./../assets/armor.png") no-repeat -32px -0px;
+}
+
+.plate-vambrance {
+    background: url("./../assets/armor.png") no-repeat -64px -0px;
+}
+
+.sprite4 {
+    background: url("./../assets/armor.png") no-repeat -96px -0px;
+}
+
+.plate-gauntlet {
+    background: url("./../assets/armor.png") no-repeat -128px -0px;
+}
+
+.plate-sabatons {
+    background: url("./../assets/armor.png") no-repeat -160px -0px;
+}
+
+.sprite7 {
+    background: url("./../assets/armor.png") no-repeat -192px -0px;
+}
+
+.sprite8 {
+    background: url("./../assets/armor.png") no-repeat -224px -0px;
+}
+
+.great-helm {
+    background: url("./../assets/armor.png") no-repeat -256px -0px;
+}
+
+.sprite10 {
+    background: url("./../assets/armor.png") no-repeat -288px -0px;
+}
+
+.sprite11 {
+    background: url("./../assets/armor.png") no-repeat -320px -0px;
+}
+
+.sprite12 {
+    background: url("./../assets/armor.png") no-repeat -352px -0px;
+}
+
+.sprite13 {
+    background: url("./../assets/armor.png") no-repeat -384px -0px;
+}
+
+.sprite14 {
+    background: url("./../assets/armor.png") no-repeat -416px -0px;
+}
+
+.sprite15 {
+    background: url("./../assets/armor.png") no-repeat -448px -0px;
+}
+
+.sprite16 {
+    background: url("./../assets/armor.png") no-repeat -480px -0px;
+}
+
+.sprite17 {
+    background: url("./../assets/armor.png") no-repeat -0px -32px;
+}
+
+.sprite18 {
+    background: url("./../assets/armor.png") no-repeat -32px -32px;
+}
+
+.sprite19 {
+    background: url("./../assets/armor.png") no-repeat -64px -32px;
+}
+
+.sprite20 {
+    background: url("./../assets/armor.png") no-repeat -96px -32px;
+}
+
+.sprite21 {
+    background: url("./../assets/armor.png") no-repeat -128px -32px;
+}
+
+.sprite22 {
+    background: url("./../assets/armor.png") no-repeat -160px -32px;
+}
+
+.sprite23 {
+    background: url("./../assets/armor.png") no-repeat -192px -32px;
+}
+
+.sprite24 {
+    background: url("./../assets/armor.png") no-repeat -256px -32px;
+}
+
+.sprite25 {
+    background: url("./../assets/armor.png") no-repeat -320px -32px;
+}
+
+.sprite26 {
+    background: url("./../assets/armor.png") no-repeat -352px -32px;
+}
+
+.sprite27 {
+    background: url("./../assets/armor.png") no-repeat -384px -32px;
+}
+
+.sprite28 {
+    background: url("./../assets/armor.png") no-repeat -448px -32px;
+}
+
+.sprite29 {
+    background: url("./../assets/armor.png") no-repeat -480px -32px;
+}
+
+.sprite30 {
+    background: url("./../assets/armor.png") no-repeat -0px -64px;
+}
+
+.sprite31 {
+    background: url("./../assets/armor.png") no-repeat -32px -64px;
+}
+
+.sprite32 {
+    background: url("./../assets/armor.png") no-repeat -64px -64px;
+}
+
+.sprite33 {
+    background: url("./../assets/armor.png") no-repeat -96px -64px;
+}
+
+.sprite34 {
+    background: url("./../assets/armor.png") no-repeat -128px -64px;
+}
+
+.sprite35 {
+    background: url("./../assets/armor.png") no-repeat -160px -64px;
+}
+
+.sprite36 {
+    background: url("./../assets/armor.png") no-repeat -192px -64px;
+}
+
+.sprite37 {
+    background: url("./../assets/armor.png") no-repeat -320px -64px;
+}
+
+.sprite38 {
+    background: url("./../assets/armor.png") no-repeat -352px -64px;
+}
+
+.sprite39 {
+    background: url("./../assets/armor.png") no-repeat -384px -64px;
+}
+
+.sprite40 {
+    background: url("./../assets/armor.png") no-repeat -480px -64px;
+}
+
+.sprite41 {
+    background: url("./../assets/armor.png") no-repeat -0px -96px;
+}
+
+.sprite42 {
+    background: url("./../assets/armor.png") no-repeat -32px -96px;
+}
+
+.sprite43 {
+    background: url("./../assets/armor.png") no-repeat -64px -96px;
+}
+
+.sprite44 {
+    background: url("./../assets/armor.png") no-repeat -96px -96px;
+}
+
+.sprite45 {
+    background: url("./../assets/armor.png") no-repeat -128px -96px;
+}
+
+.sprite46 {
+    background: url("./../assets/armor.png") no-repeat -160px -96px;
+}
+
+.sprite47 {
+    background: url("./../assets/armor.png") no-repeat -192px -96px;
+}
+
+.sprite48 {
+    background: url("./../assets/armor.png") no-repeat -384px -96px;
+}
+
+.sprite49 {
+    background: url("./../assets/armor.png") no-repeat -480px -96px;
+}
+
+.chain-chest {
+    background: url("./../assets/armor.png") no-repeat -0px -128px;
+}
+
+.chain-pants {
+    background: url("./../assets/armor.png") no-repeat -32px -128px;
+}
+
+.chain-sleeve {
+    background: url("./../assets/armor.png") no-repeat -64px -128px;
+}
+
+.chain-coif {
+    background: url("./../assets/armor.png") no-repeat -96px -128px;
+}
+
+.chain-gauntlet {
+    background: url("./../assets/armor.png") no-repeat -128px -128px;
+}
+
+.chain-boot {
+    background: url("./../assets/armor.png") no-repeat -160px -128px;
+}
+
+.sprite56 {
+    background: url("./../assets/armor.png") no-repeat -192px -128px;
+}
+
+.sprite57 {
+    background: url("./../assets/armor.png") no-repeat -480px -128px;
+}
+
+.sprite58 {
+    background: url("./../assets/armor.png") no-repeat -512px -128px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite59 {
+    background: url("./../assets/armor.png") no-repeat -0px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite60 {
+    background: url("./../assets/armor.png") no-repeat -32px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite61 {
+    background: url("./../assets/armor.png") no-repeat -64px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite62 {
+    background: url("./../assets/armor.png") no-repeat -96px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite63 {
+    background: url("./../assets/armor.png") no-repeat -128px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite64 {
+    background: url("./../assets/armor.png") no-repeat -160px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite65 {
+    background: url("./../assets/armor.png") no-repeat -192px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite66 {
+    background: url("./../assets/armor.png") no-repeat -480px -160px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite67 {
+    background: url("./../assets/armor.png") no-repeat -0px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite68 {
+    background: url("./../assets/armor.png") no-repeat -32px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite69 {
+    background: url("./../assets/armor.png") no-repeat -64px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite70 {
+    background: url("./../assets/armor.png") no-repeat -96px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite71 {
+    background: url("./../assets/armor.png") no-repeat -128px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite72 {
+    background: url("./../assets/armor.png") no-repeat -160px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite73 {
+    background: url("./../assets/armor.png") no-repeat -192px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite74 {
+    background: url("./../assets/armor.png") no-repeat -480px -192px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite75 {
+    background: url("./../assets/armor.png") no-repeat -0px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite76 {
+    background: url("./../assets/armor.png") no-repeat -32px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite77 {
+    background: url("./../assets/armor.png") no-repeat -64px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite78 {
+    background: url("./../assets/armor.png") no-repeat -96px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite79 {
+    background: url("./../assets/armor.png") no-repeat -128px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite80 {
+    background: url("./../assets/armor.png") no-repeat -160px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite81 {
+    background: url("./../assets/armor.png") no-repeat -192px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite82 {
+    background: url("./../assets/armor.png") no-repeat -480px -224px;
+    width: 32px;
+    height: 32px;
+}
+
+.chain-barding {
+    background: url("./../assets/armor.png") no-repeat -0px -256px;
+}
+
+.sprite84 {
+    background: url("./../assets/armor.png") no-repeat -32px -256px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite85 {
+    background: url("./../assets/armor.png") no-repeat -128px -256px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite86 {
+    background: url("./../assets/armor.png") no-repeat -480px -256px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite87 {
+    background: url("./../assets/armor.png") no-repeat -0px -288px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite88 {
+    background: url("./../assets/armor.png") no-repeat -32px -288px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite89 {
+    background: url("./../assets/armor.png") no-repeat -480px -288px;
+    width: 32px;
+    height: 32px;
+}
+
+.sprite90 {
+    background: url("./../assets/armor.png") no-repeat -480px -320px;
+    width: 32px;
+    height: 32px;
 }
