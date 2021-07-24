@@ -10,12 +10,23 @@ export class PricePipe implements PipeTransform {
       return "NaN";
     }
 
-    // coppers
-    if (val >= 100 && val <= 9999) {
-      let copper = val / 100;
+    let silverFraction = val / 10000;
 
-      return `${copper}c`;
+    let silvers = parseInt(silverFraction.toString());
+    let coppers = Math.ceil((silverFraction - silvers) * 100); 
+
+    if (silverFraction >= 1 && coppers === undefined) {
+      return `${silvers}s`;
     }
+
+    if (silverFraction >= 1 && coppers != undefined) {
+      return `${silvers}s${coppers}c`;
+    }
+    
+    if (silverFraction < 1 && coppers != undefined) {
+      return `${coppers}c`;
+    }
+
 
     return "0";
   }

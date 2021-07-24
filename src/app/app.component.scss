@@ -4,16 +4,19 @@
     color: black;
 }
 
+.sales-item {
+    color: grey;
+}
+
 .hover-panel {
     border: 2px solid burlywood;
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 60%;
+    width: 300px;
     margin: 0 auto;
     padding: 4px;
-    position: absolute;
-    top: 55px;
+    position: fixed;
     z-index: 100;
     display: none;
     .ql {
@@ -43,7 +46,10 @@
     height: 32px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 0px;
+    transform: scale(75%);
+    position: relative;
+    bottom: 2px;
 }
 
 .breast-plate {
