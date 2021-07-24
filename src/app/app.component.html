@@ -6,44 +6,25 @@
 </nav>
 
 <div class="content">
-    <!-- <div class="row">
-        <div class="col-xl-4" *ngFor="let category of sales.armor.categories">
+    <div class="row">
+        <div class="col-xl-4" *ngFor="let g of groups">
             <h3>
-                {{category.type}}
+                {{g.Name}}
             </h3>
 
-            <div *ngFor="let slot of category.slots">
-                <ul class="list-group" *ngFor="let a of slot.items">
-                    <li class="list-group-item item" [ngClass]="{'sold' : a.sold === true}">
-                        <span [ngClass]="slot.class" class="slot-icon"></span>
-                        <div class="hover-panel">
-                            {{slot.type}} <span class="ql">QL: {{a.ql}}</span> <br /> {{a.material}}, common
-                            <br *ngIf="a.enchants" />
-                            <br *ngIf="a.enchants" />
+            <div *ngFor="let p of g.Items" class="sales-item" [ngClass]="{'sold' : p.Sold === true}">
+                <span [ngClass]="p.Class" class="slot-icon"></span>
+                <div class="hover-panel">
+                    {{p.Name}} <span class="ql">QL: {{p.QL}}</span> <br /> {{p.Material}}, common
+                    <br *ngIf="p.AoSP > 0" />
+                    <br *ngIf="p.AoSP > 0" />
 
-                            <span *ngFor="let cast of a.enchants">{{cast.spell}} {{cast.strength}} </span>
-                        </div>
-                        <span>{{slot.type}}</span><span> ({{a.material}}),</span><span> {{a.ql}}ql</span>
-                        <span *ngFor="let cast of a.enchants"> {{cast.spell}}{{cast.strength}} </span>
-                        <span class="price"> {{a.price | price}}</span>
-                    </li>
-                </ul>
+                    <span *ngIf="p.AoSP > 0">AoSP{{p.AoSP}} </span>
+                </div>
+                <span>{{p.Name}}</span><span> ({{p.Material}}),</span><span> {{p.QL}}ql</span>
+                <span *ngIf="p.AoSP > 0"> AoSP{{p.AoSP}} </span>
+                <span class="price"> {{p.Price | price}}</span>
             </div>
         </div>
-    </div> -->
-
-    <div *ngFor="let p of prices" [ngClass]="{'sold' : p.Sold === true}">
-        <span [ngClass]="p.Class" class="slot-icon"></span>
-        <div class="hover-panel">
-            {{p.Name}} <span class="ql">QL: {{p.QL}}</span> <br /> {{p.Material}}, common
-            <br *ngIf="p.AoSP > 0" />
-            <br *ngIf="p.AoSP > 0" />
-
-            <span *ngIf="p.AoSP > 0">AoSP{{p.AoSP}} </span>
-        </div>
-        <span>{{p.Name}}</span><span> ({{p.Material}}),</span><span> {{p.QL}}ql</span>
-        <span *ngIf="p.AoSP > 0">AoSP{{p.AoSP}} </span>
-        <span class="price"> {{p.Price | price}}</span>
     </div>
-
 </div>

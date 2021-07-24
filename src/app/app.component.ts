@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { SheetsService } from './sheets.service';
 
+import * as _ from 'lodash';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +13,7 @@ import { SheetsService } from './sheets.service';
 export class AppComponent implements OnInit {
   title = `Jack's Wurm Sales`;
 
+  groups: Category[] = [];
   prices: Item[] = [];
   sales: any;
   chainItems: any;
@@ -56,6 +59,21 @@ export class AppComponent implements OnInit {
       this.prices = mappedItems.filter(i => i.Name != "")
 
       console.log("Prices", this.prices);
+
+      let grouped = _.groupBy(this.prices, p => p.Type);
+
+      Object.keys(grouped).forEach(key => {
+        let value = grouped[key];
+
+        let newCat = <Category>({
+          Name: key,
+          Items: value
+        });
+
+        this.groups = [...this.groups,  newCat];
+      });
+
+      console.log("Groups", this.groups);
     });
   }
 }
@@ -83,5 +101,10 @@ export interface Item {
   Price: number;
   Copper_Price: number;
   Sold: boolean;
+}
+
+export interface Category {
+  Name: string;
+  Items: Item[];
 }
 
