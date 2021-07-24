@@ -16,13 +16,28 @@
                 <span [ngClass]="p.Class" class="slot-icon"></span>
                 <div class="hover-panel">
                     {{p.Name}} <span class="ql">QL: {{p.QL}}</span> <br /> {{p.Material}}, common
-                    <br *ngIf="p.AoSP > 0" />
-                    <br *ngIf="p.AoSP > 0" />
+                    <br *ngIf="p.AoSP > 0 || p.CoC > 0 || p.WoA > 0" />
+                    <br *ngIf="p.AoSP > 0 || p.CoC > 0 || p.WoA > 0" />
 
                     <span *ngIf="p.AoSP > 0">AoSP{{p.AoSP}} </span>
+                    <span *ngIf="p.CoC > 0">CoC{{p.CoC}} </span>
+                    <span *ngIf="p.WoA > 0">WoA{{p.WoA}} </span>
+
+                    <br /><br /> Item Quality Cost: <span class="price">{{p.QL_Cost | price}}</span>
+                    <br /> Material Multiplier: <span class="price">x{{p.Material_Multiplier}}</span>
+                    <br /> Base Item Cost: <span class="price">{{p.Base_Cost | price}}</span>
+
+                    <br />
+                    <span *ngIf="p.AoSP > 0"><br />AoSP Cost: <span class="price">{{p.AoSP_Cost | price}}</span></span>
+                    <span *ngIf="p.CoC > 0"><br />CoC Cost: <span class="price">{{p.CoC_Cost | price}}</span></span>
+                    <span *ngIf="p.WoA > 0"><br />WoA Cost: <span class="price">{{p.WoA_Cost | price}}</span></span>
+                    <br />
+                    <br /> Total Cost: <span class="price">{{p.Price | price}}</span>
                 </div>
                 <span>{{p.Name}}</span><span> ({{p.Material}}),</span><span> {{p.QL}}ql</span>
                 <span *ngIf="p.AoSP > 0"> AoSP{{p.AoSP}} </span>
+                <span *ngIf="p.CoC > 0"> CoC{{p.CoC}} </span>
+                <span *ngIf="p.WoA > 0"> WoA{{p.WoA}} </span>
                 <span class="price"> {{p.Price | price}}</span>
             </div>
         </div>

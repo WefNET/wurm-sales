@@ -5,7 +5,7 @@
 }
 
 .sales-item {
-    border: thin blue dotted;
+    border-bottom: thin blue dotted;
     padding: 2px;
     margin: 2px;
 }
@@ -474,6 +474,12 @@
 
 .sprite90 {
     background: url("./../assets/armor.png") no-repeat -480px -320px;
+    width: 32px;
+    height: 32px;
+}
+
+.horse-shoe {
+    background: url('./../assets/tools.png') no-repeat -544px -0px;
     width: 32px;
     height: 32px;
 }

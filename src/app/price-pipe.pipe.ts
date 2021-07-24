@@ -13,7 +13,7 @@ export class PricePipe implements PipeTransform {
     let silverFraction = val / 10000;
 
     let silvers = parseInt(silverFraction.toString());
-    let coppers = Math.ceil((silverFraction - silvers) * 100); 
+    let coppers = Math.round((silverFraction - silvers) * 100); 
 
     if (silverFraction >= 1 && coppers === undefined) {
       return `${silvers}s`;
