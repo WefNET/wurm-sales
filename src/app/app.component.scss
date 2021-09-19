@@ -190,7 +190,7 @@
     background: url("./../assets/armor.png") no-repeat -128px -64px;
 }
 
-.sprite35 {
+.studded-boot {
     background: url("./../assets/armor.png") no-repeat -160px -64px;
 }
 
@@ -480,6 +480,12 @@
 
 .horse-shoe {
     background: url('./../assets/tools.png') no-repeat -544px -0px;
+    width: 32px;
+    height: 32px;
+}
+
+.metal-brush {
+    background: url('./../assets/tools.png') no-repeat -64px -256px;
     width: 32px;
     height: 32px;
 }
