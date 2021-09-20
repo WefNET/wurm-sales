@@ -2,12 +2,17 @@
     background-color: blanchedalmond;
     padding: 10px 20px;
     color: black;
+    min-width: 500px;
 }
 
-.sales-item {
-    border-bottom: thin blue dotted;
-    padding: 2px;
-    margin: 2px;
+.badge {
+    cursor: pointer;
+}
+
+.supreme {
+    color: cyan;
+    background-color: black;
+    // margin-right: 8px;
 }
 
 .hover-panel {
@@ -170,23 +175,23 @@
     background: url("./../assets/armor.png") no-repeat -480px -32px;
 }
 
-.sprite30 {
+.studded-jacket {
     background: url("./../assets/armor.png") no-repeat -0px -64px;
 }
 
-.sprite31 {
+.studded-pants {
     background: url("./../assets/armor.png") no-repeat -32px -64px;
 }
 
-.sprite32 {
+.studded-sleeve {
     background: url("./../assets/armor.png") no-repeat -64px -64px;
 }
 
-.sprite33 {
+.studded-cap {
     background: url("./../assets/armor.png") no-repeat -96px -64px;
 }
 
-.sprite34 {
+.studded-glove {
     background: url("./../assets/armor.png") no-repeat -128px -64px;
 }
 
@@ -479,19 +484,25 @@
 }
 
 .horse-shoe {
-    background: url('./../assets/tools.png') no-repeat -544px -0px;
+    background: url("./../assets/tools.png") no-repeat -544px -0px;
+    width: 32px;
+    height: 32px;
+}
+
+.yoyo {
+    background: url("./../assets/tools.png") no-repeat -32px -64px;
     width: 32px;
     height: 32px;
 }
 
 .metal-brush {
-    background: url('./../assets/tools.png') no-repeat -64px -256px;
+    background: url("./../assets/tools.png") no-repeat -64px -256px;
     width: 32px;
     height: 32px;
 }
 
 .pelt {
-    background: url('./../assets/resource.png') no-repeat -64px -192px;
+    background: url("./../assets/resource.png") no-repeat -64px -192px;
     width: 32px;
     height: 32px;
 }

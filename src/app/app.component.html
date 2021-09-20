@@ -31,14 +31,21 @@
                     <span *ngIf="p.AoSP > 0"><br />AoSP Cost: <span class="price">{{p.AoSP_Cost | price}}</span></span>
                     <span *ngIf="p.CoC > 0"><br />CoC Cost: <span class="price">{{p.CoC_Cost | price}}</span></span>
                     <span *ngIf="p.WoA > 0"><br />WoA Cost: <span class="price">{{p.WoA_Cost | price}}</span></span>
+
                     <br />
+                    <br *ngIf="p.Discount" /> <span *ngIf="p.Discount" class="badge badge-pill badge-danger">-{{p.Discount}}% {{p.Discount_Reason}}</span>
                     <br /> Total Cost: <span class="price">{{p.Price | price}}</span>
                 </div>
-                <span>{{p.Name}}</span><span> ({{p.Material}}),</span><span> {{p.QL}}ql</span>
+                <span>
+                    <span class="rare" *ngIf="p.Rarity === 1">(Rare)</span><span class="supreme" *ngIf="p.Rarity === 2">(Supreme)</span> {{p.Name}} ({{p.Material}}), {{p.QL}}ql
+                </span>
                 <span *ngIf="p.AoSP > 0"> AoSP{{p.AoSP}} </span>
                 <span *ngIf="p.CoC > 0"> CoC{{p.CoC}} </span>
                 <span *ngIf="p.WoA > 0"> WoA{{p.WoA}} </span>
-                <span class="price"> {{p.Price | price}}</span>
+
+                <div class="price">
+                    <span *ngIf="p.Discount" title="{{p.Discount_Reason}}" class="badge badge-pill badge-danger">-{{p.Discount}}%</span> {{p.Price | price}}
+                </div>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@ export class SheetsService {
 
   private v4API = "https://sheets.googleapis.com/v4/spreadsheets";
   private priceSheet = '1w_wzDd6wlrFnRGyOjWZLfAA8U3PuLE9ddwd5HK12FHc';
-  private priceSheetRange = 'ranges=A2:Q500';
+  private priceSheetRange = 'ranges=A2:T500';
   // "ranges=Deeds!A2:D";
 
   private yourMotherSmokesCrack = 'AIzaSyDi4nKWGegwmPuesj8GLa3kRaiFw0I-v2g';

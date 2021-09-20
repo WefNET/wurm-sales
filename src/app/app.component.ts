@@ -51,8 +51,19 @@ export class AppComponent implements OnInit {
           Price: p[14],
           Copper_Price: p[15],
           Sold: p[16] === "TRUE" ? true : false,
+          Discount: p[17],
+          Discount_Reason: p[18],
+          Rarity: p[19]
         })
 
+        if (i.Discount) {
+          i.Price = (100 - i.Discount) * i.Price / 100;
+        }
+
+        if (i.Rarity) {
+          i.Rarity = parseInt(i.Rarity.toString());
+        }
+        
         return i;
       });
 
@@ -101,6 +112,9 @@ export interface Item {
   Price: number;
   Copper_Price: number;
   Sold: boolean;
+  Discount: number;
+  Discount_Reason: string;
+  Rarity: number;
 }
 
 export interface Category {
